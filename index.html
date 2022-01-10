@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+        <head>
+		<title>SnakeStats</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="https://www.google.com/logos/fnbx/snake_arcade/v3/trophy_00.png" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src="script.js" defer></script>
+	</head>
+
+	<body>
+                <button id="infoBtn" class="modal-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                </button>
+                <button id="settingsBtn" class="modal-button2">
+                        <svg style="width: 2em; viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                                        </button>
+                <h1>SnakeStats</h1>
+                <h2 id="mainText">Main Leaderboard</h2>
+                <h2 id="catText" style="display:none">Category Extensions</h2>
+                <h2 id="customText" style="display:none">Custom Leaderboard</h2>
+                <button id="switchButton">Click here to go to Category Extensions</button>
+                <h1 id="info">Loading Runs...</h1>
+                <div class = "container"></div>
+                <img src="hamburger.png" alt="Hamburger!" target=""></tr>
+
+                <div id="infoModal" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Made By Hoever</p>
+                    <p>Last Updated 31/3/2021</p>
+                    <p>Credit to Google for Images used</p>
+                    <br>
+                    <p><a href = "https://www.speedrun.com/snake_game">Speedrun.com</a></p>
+                    <p><a href = "https://allapplecalc.netlify.app/">All Apple Calc</a></p>
+                  </div>
+
+                </div>
+
+                <div id="settingsModal" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p><b>Settings</b></p>
+                        <label for="showAmount">Use number of world records instead of percentage</label>
+                        <input type="checkbox" id="showAmount"><br><br>
+                        <label for="date">Pick a date to travel back in time:</label><br>
+                        <input type="date" id="datepicker"><br><br>
+                        <label for="username" id="highestLabel">Enter an username to calculate the date with the highest percentage of runs</label><br>
+                        <input type="input" id="username" placeholder="username">
+                        <button class="mybutton" id="sendusername">Calculate</button>
+                        <p id="usernameResult" style="display:none"><br><br>
+                        <p>Make a custom leaderboard by clicking the icons:</p> 
+                        <div id="optionButtons">
+                        </div>
+                  </div>
+
+                </div>
+	</body>
+
+</html>

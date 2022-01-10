@@ -1,0 +1,238 @@
+body {
+	background-color: #4DC1F9;
+	white-space-collapsing:discard;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+h1{
+	color: #E9DC00;
+	font-size: 50px;
+	margin: 4px;
+}
+h2{
+	color: #E9DC00;
+	font-size: 30px;
+	margin: 4px;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+@media only screen and (max-width: 900px) {
+	.container{
+		justify-content: flex-start;
+	}
+}
+
+.container table.mode1{
+	background-color: #51AD3E;
+	border: 10px solid #51AD3E;
+}
+.container .mode1 th{
+	border: 3px solid #51AD3E;
+}
+.container .mode1 td{
+	border: 3px solid #51AD3E;
+}
+
+.container table.mode2{
+	background-color: #AB593E;
+	border: 10px solid #AB593E;
+}
+.container .mode2 th{
+	border: 3px solid #AB593E;
+}
+.container .mode2 td{
+	border: 3px solid #AB593E;
+}
+
+.container table{
+	border-top: none;
+	border: 10px solid #578A34;
+	background-color: #578A34;
+	border-collapse: collapse;
+	color:white;
+	margin: 8px 8px;
+}
+
+.container thead{
+	font-size: 18px;
+}
+
+.container th{
+	border: 3px solid #578A34;
+	height: 50px;
+}
+.container th img{
+	width:40px;
+	height:auto;
+	padding: 4px 4px;
+	padding-right: 12px;
+}
+
+.ranglist img{
+	width:100px;
+}
+.container td{
+	border: 3px solid #578A34;
+	color:white;
+	text-align: center;
+}
+
+.container td a{
+	color:white;
+	text-decoration: none;
+}
+
+.result{
+	align:center;
+	/*background-color: #50712B;*/
+	background-color: #4C792D;
+	width:100px;
+}
+
+.result a{
+	display: block;
+}
+
+.result a a{
+	width:fit-content;
+	margin:auto;
+}
+
+.result:hover{
+	background-color: #578A34;
+}
+
+.gradient-text {
+	font-size: 23px;
+	font-weight: bold;
+    background-color: #f3ec78;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    padding: 4px 4px;
+}
+
+.time{
+	margin-top: 5px;
+	margin-left: 4px;
+	margin-right:4px;
+	font-size: 18px;
+	display: block;
+	white-space: nowrap;
+}
+
+.name{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.percentage{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+button{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+button:focus {outline:0;}
+
+.mybutton {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.16, rgb(207, 207, 207)), color-stop(0.79, rgb(252, 252, 252)));
+  background-image: -moz-linear-gradient(center bottom, rgb(207, 207, 207) 16%, rgb(252, 252, 252) 79%);
+  background-image: linear-gradient(to top, rgb(207, 207, 207) 16%, rgb(252, 252, 252) 79%); 
+  padding: 3px;
+  border: 1px solid #000;
+  color: black;
+  text-decoration: none;
+}
+
+/* The Modal (background) */
+
+.modal-button {
+    position: absolute;
+    right: 0.8em;
+    top: 0.8em;
+}
+.modal-button2 {
+    position: absolute;
+    right: 4em;
+    top: 0.8em;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: fit-content;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.optionButtonImage{
+	transition: all 1s ease;
+	width:50px;
+	height: auto;
+}
+
+.optionButtonImageDisabled{
+	transform: scale(0.5);
+	opacity:0.45
+}
+.optionButton{
+	border: none;
+	padding: 0px 0px;
+	margin: 0px 0px;
+	display: inline;
+	outline:none;
+	background-color: rgba(0,0,0,0);
+	width: 60px;
+
+}
