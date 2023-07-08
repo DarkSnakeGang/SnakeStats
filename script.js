@@ -37,9 +37,8 @@ var gamemodes =    {"Classic":{visible:true,icon:"https://www.google.com/logos/f
                     "Peaceful":{visible:true,icon:"https://www.google.com/logos/fnbx/snake_arcade/v16/trophy_15.png",id:"trophy_16"}};
 var runModes =     {"25 Apples":{visible:true,icon:null,text:"25 Apples",id:"mode_00"},
                     "50 Apples":{visible:true,icon:null,text:"50 Apples",id:"mode_01"},
-                    "69 Apples":{visible:true,icon:null,text:"69 Apples",id:"mode_02"},
-                    "100 Apples":{visible:true,icon:null,text:"100 Apples",id:"mode_03"},
-                    "All Apples":{visible:true,icon:null,text:"All Apples",id:"mode_04"}};
+                    "100 Apples":{visible:true,icon:null,text:"100 Apples",id:"mode_02"},
+                    "All Apples":{visible:true,icon:null,text:"All Apples",id:"mode_03"}};
 var runs = [];
 var bestRuns = [];
 var date = "";
