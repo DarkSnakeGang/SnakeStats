@@ -328,6 +328,7 @@ function getAllRuns(gameID, callback, offset, categorie){
 	if(offset<9999){
 	    for (let i = 0; i < maxAPIrequests; i++) {
 		makeAPIrequest("https://www.speedrun.com/api/v1/runs?game="+gameID+"&max="+max+"&embed=players&status=verified&category="+categorie+"&direction=desc&orderby=submitted&offset="+offset, (x) => ifDone(x));
+		makeAPIrequest("https://www.speedrun.com/api/v1/runs?game="+gameID+"&max="+max+"&embed=players&status=verified&category="+categorie+"&direction=asc&orderby=submitted&offset="+offset, (x) => ifDone(x));
 		offset += max;
 	    } 
 	}
@@ -758,7 +759,7 @@ function switchMode(newmode){
             reset();
             speeds["Slow"].visible = false;
             document.getElementById('optionspeed_01').firstChild.setAttribute('class','optionButtonImage optionButtonImageDisabled');
-            document.getElementById('optionmode_02').checked = false;
+            //document.getElementById('optionmode_02').checked = false;
             document.getElementById("mainText").setAttribute("style",'');
             document.getElementById("catText").setAttribute("style",'display:none');
             document.getElementById("customText").setAttribute("style",'display:none');
