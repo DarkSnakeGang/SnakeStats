@@ -331,6 +331,9 @@ function getAllRuns(gameID, callback, offset, categorie){
 		offset += max;
 	    } 
 	}
+	else {
+		done = true;
+	}
 }
 
 function calculateBestRuns(callback){
