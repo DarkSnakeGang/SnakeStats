@@ -294,7 +294,7 @@ function getAllRuns(gameID, callback, offset, categorie){
 
     var ifDone = function(x){
         count+=1; 
-        if(x.data.length != 0){
+        if(x.data.length != 0 && offset<9999){
             //store runs
             for(run of x.data){
                 var settings = getSettingsFromRun(run);
