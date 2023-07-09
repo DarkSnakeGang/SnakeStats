@@ -323,11 +323,14 @@ function getAllRuns(gameID, callback, offset, categorie){
                 callback();
             }
         }
-    }
-    for (let i = 0; i < maxAPIrequests; i++) {
-        makeAPIrequest("https://www.speedrun.com/api/v1/runs?game="+gameID+"&max="+max+"&embed=players&status=verified&category="+categorie+"&offset="+offset, (x) => ifDone(x));
-        offset += max;
-    }
+    }  
+	// Limit the offset to whatever src supports which right now is up to 10000 - this "if" was added by yarmiplay
+	if(offset<9999){
+	    for (let i = 0; i < maxAPIrequests; i++) {
+		makeAPIrequest("https://www.speedrun.com/api/v1/runs?game="+gameID+"&max="+max+"&embed=players&status=verified&category="+categorie+"&offset="+offset, (x) => ifDone(x));
+		offset += max;
+	    } 
+	}
 }
 
 function calculateBestRuns(callback){
