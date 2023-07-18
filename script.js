@@ -951,7 +951,7 @@ for(runMode in runModes){
     document.getElementById('optionButtons').appendChild(input);
     document.getElementById('optionButtons').appendChild(label);
 }
-document.getElementById('optionmode_02').checked = false;
+//document.getElementById('optionmode_02').checked = false;
 
 //username
 document.getElementById('sendusername').addEventListener('click', () =>{
