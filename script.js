@@ -36,7 +36,8 @@ var gamemodes =    {"Classic":{visible:true,icon:"https://www.google.com/logos/f
 		    "Light":{visible:true,icon:"https://www.google.com/logos/fnbx/snake_arcade/v16/trophy_14.png",id:"trophy_15"},
 		    "Shield":{visible:true,icon:"https://www.google.com/logos/fnbx/snake_arcade/v17/trophy_15.png",id:"trophy_16"},
 		    "Arrow":{visible:true,icon:"https://www.google.com/logos/fnbx/snake_arcade/v18/trophy_16.png",id:"trophy_17"},
-                    "Peaceful":{visible:true,icon:"https://www.google.com/logos/fnbx/snake_arcade/v18/trophy_17.png",id:"trophy_18"}};
+		    "Hotdog":{visible:true,icon:"https://www.google.com/logos/fnbx/snake_arcade/v19/trophy_17.png",id:"trophy_18"},
+                    "Peaceful":{visible:true,icon:"https://www.google.com/logos/fnbx/snake_arcade/v18/trophy_17.png",id:"trophy_19"}};
 var runModes =     {"25 Apples":{visible:true,icon:null,text:"25 Apples",id:"mode_00"},
                     "50 Apples":{visible:true,icon:null,text:"50 Apples",id:"mode_01"},
                     "100 Apples":{visible:true,icon:null,text:"100 Apples",id:"mode_02"},
