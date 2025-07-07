@@ -13,7 +13,7 @@ var appleAmounts = {"1 Apple":{visible:true,icon:"https://www.google.com/logos/f
                     "3 Apples":{visible:true,icon:"https://www.google.com/logos/fnbx/snake_arcade/v3/count_01.png",id:"count_01"},
                     "5 Apples":{visible:true,icon:"https://www.google.com/logos/fnbx/snake_arcade/v3/count_02.png",id:"count_02"},
 		    "Dice":{visible:true,icon:"https://www.google.com/logos/fnbx/snake_arcade/v17/count_03.png",id:"count_03"}};
-var speeds =       {"Standard":{visible:true,icon:"https://www.google.com/logos/fnbx/snake_arcade/v3/speed_00.png",id:"speed_00"},
+var speeds =       {"Normal":{visible:true,icon:"https://www.google.com/logos/fnbx/snake_arcade/v3/speed_00.png",id:"speed_00"},
                     "Slow":{visible:false,icon:"https://www.google.com/logos/fnbx/snake_arcade/v3/speed_02.png",id:"speed_01"},
                     "Fast":{visible:true,icon:"https://www.google.com/logos/fnbx/snake_arcade/v3/speed_01.png",id:"speed_02"}};
 var sizes =        {"Standard":{visible:true,icon:"https://www.google.com/logos/fnbx/snake_arcade/v4/size_00.png",id:"size_00"},
